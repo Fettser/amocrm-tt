@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  background-color: #dbe4ee;
+  padding: 10px 10px;
+  border-radius: 50vh;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+span {
+  font-family: "Agency FB", sans-serif;
+  font-size: 64px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 50vh;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.start {
+  background-color: aquamarine;
+}
+
+.stop {
+  background-color: #ff7faa;
+}

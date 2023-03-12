@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E1014;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile_bar {
+    display: none;
+}
+
+.ball {
+    position: absolute;
+    z-index: -999;
+}
+
+p, h1, button, th {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    color: #E4E5EA;
+    margin: 0;
+}
+
+span, a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #E4E5EA;
+    margin: 0;
+}
+
+td, th {
+    text-align: right;
+    color: #E4E5EA;
+}
+
+th {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+}
+
+td {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    padding-bottom: 30px;
+    max-width: 150px;
+}
+
+.header, .footer, .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 768px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.header {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.footer {
+    align-items: flex-start;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.description {
+    position: relative;
+}
+
+.description span {
+    position: absolute;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    top: 100%;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    gap: 35px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topic:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.topic:last-child .col:last-child {
+    align-items: flex-end;
+    gap: 20px;
+    text-align: right;
+}
+
+.topic:last-child .col:last-child span, a {
+    font-size: 12px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #656566;
+}
+
+.items {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.networks {
+    display: flex;
+    gap: 10px;
+}
+
+.content {
+    align-items: flex-start;
+    margin-top: 90px;
+    margin-bottom: 140px;
+}
+
+.slogan, .offers {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.offers p {
+    text-align: right;
+}
+
+.offers {
+    align-items: flex-end;
+}
+
+.slogan h1 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.slogan span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.gradient {
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.btn {
+    background-color: #4077F3;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #E4E5EA;
+    padding: 20px 35px;
+    cursor: pointer;
+}
+
+.minus {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .header, .footer, .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .mobile_bar {
+        display: flex;
+        position: fixed;
+        z-index: 10;
+        min-width: 100%;
+        height: 50px;
+        /*gap: 10px;*/
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0E1014;
+    }
+
+    .mobile_bar p {
+        font-size: 12px;
+    }
+
+    .content {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .offers p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .slogan, .offers {
+        width: 100%;
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .slogan h1 {
+        font-size: 36px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: none;
+    }
+
+    th {
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: #0E1014;
+    }
+
+    .col p {
+        font-size: 14px;
+    }
+
+    .topic:last-child {
+        align-items: flex-start;
+    }
+
+    .topic:last-child .col:last-child {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .ball {
+        filter: blur(50px) !important;
+    }
+
+    .minus {
+        position: relative;
+        top: -4px;
+        margin-right: 5px;
+        display: inline-block;
+        width: 12px;
+        height: 2px;
+        background: linear-gradient(92deg, #FCB045 27.14%, #ff3711 121.36%), #E4E5EA;
+    }
+
+    p b {
+        text-transform: lowercase;
+    }
+}
