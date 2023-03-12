@@ -38,7 +38,7 @@ function App() {
       timerRef.current = setInterval(() => {
         const currentTime = Date.now()
         if (currentTime < time * 1000 + startTime) {
-          setTime(time - Math.trunc((currentTime - startTime) / 1000))
+          setTime(time - Math.round((currentTime - startTime) / 1000))
         } else {
           setRunning(false)
           setTime(0)
